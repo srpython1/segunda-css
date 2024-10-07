@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #practica1 {
+            color: gray;
+            font-size: 20px;
+            background-color: lightskyblue;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        #practica2 {
+            color: red;
+            font-size: 20px;
+            background-color: WHTE;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        #practica3 {
+            color: blue;
+            font-size: 20px;
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .producto {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .producto img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .producto h3 {
+            margin: 10px 0;
+        }
+
+        .producto button {
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        .producto button:hover {
+            background-color: #0056b3;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <section id="practica1">
+        <p>1¿Qué es CSS? CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para describir la presentación de un documento HTML.</p>
+        <p>2¿Cuál es la función principal de CSS? Su función principal es separar el contenido del documento de su diseño, permitiendo modificar la apariencia visual sin cambiar el HTML.</p>
+        <p>3¿Cómo se puede incluir CSS en un documento HTML? Se puede incluir CSS de tres maneras: inline (dentro de una etiqueta HTML), internal (dentro de un <code>style</code> en la cabecera) y external (en un archivo .css vinculado con <code>link</code>).</p>
+        <p>4¿Qué son los selectores en CSS? Los selectores son patrones utilizados para seleccionar los elementos HTML que se desea estilizar.</p>
+        <p>5¿Qué son las propiedades y valores en CSS? Las propiedades son características que se pueden aplicar a los elementos (como color o font-size), y los valores son las configuraciones específicas que se les asignan (como red o 16px).</p>
+        <p>6¿Cómo se aplica el modelo de caja en CSS? El modelo de caja describe cómo se comportan los elementos en términos de tamaño, incluyendo márgenes, bordes, relleno y el contenido en sí.</p>
+        <p>7¿Qué es el "cascading" en CSS? El "cascading" se refiere a la forma en que los estilos se aplican y se resuelven cuando hay múltiples reglas aplicables, priorizando según la especificidad y el orden.</p>
+        <p>8¿Qué son las media queries? Las media queries son condiciones que permiten aplicar estilos específicos según características del dispositivo, como el ancho de la pantalla.</p>
+        <p>9¿Cuáles son algunos estilos comunes que se pueden aplicar? Estilos comunes incluyen colores de fondo, fuentes, márgenes, alineación de texto, y bordes.</p>
+        <p>10¿Cómo se puede usar CSS para crear un diseño responsivo? Se utilizan media queries para ajustar el diseño a diferentes tamaños de pantalla, junto con unidades relativas como porcentajes y vw/vh para elementos flexibles.</p>
+    </section>
+
+    <section id="practica2">
+        <header>
+            <h1>Bienvenido a Mi Página</h1>
+        </header>
+        <main>
+            <p>Este es un párrafo que describe el contenido de la página. Aquí puedes encontrar información interesante.</p>
+            <img src="https://desarrolladoresweb.org/wp-content/uploads/como-insertar-imagenes-en-html.jpg" alt="Descripción de la imagen">
+        </main>
+    </section>
+
+    <section id="practica3">
+      <p>CARROS BONITOS</p>
+        <div id="container">
+            <div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT3-psQ_xMYZBN65G4lsqO7pJqqcunXU_Dgg&s" alt="Coche 1">
+                <h3>Coche 1</h3>
+                <button>Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3JJgDoqyaeAd0t4ihIe_tic5HnNgWYxcO7g&s" alt="Coche 2">
+                <h3>Coche 2</h3>
+                <button>Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8cTlU_m637qp1Ojn5YZzlXMb0IEMJgzObQ&s" alt="Coche 3">
+                <h3>Coche 3</h3>
+                <button>Ver más</button>
+            </div>
+            <div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoizNR9QhZXSPAcGVpmEWhxdSTbG8-qvoOOw&s" alt="Coche 4">
+                <h3>Coche 4</h3>
+                <button>Ver más</button>
+            </div>
+        </div>
+     
+    </section>
+</body>
+</html>
